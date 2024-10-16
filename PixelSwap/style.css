@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Munro";
+  src: url(./fonts/munro.ttf);
+}
+
+@font-face {
+  font-family: "Munro Small";
+  src: url(./fonts/munro-small.ttf);
+}
+
+* {
+  font-family: "Roboto Mono", monospace;
+  color: #535657;
+}
+
+.light-font {
+  color: #f4faff;
+}
+
+.dark-font {
+  color: #4f646f;
+}
+
+body,
+h1,
+h2,
+h3,
+html,
+p {
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+html {
+  background-color: #4f646f;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    width: 94%;
+  }
+}
+
+#content {
+  margin-top: 0.1rem;
+  background-color: #f4faff;
+  display: flex;
+  flex-direction: row;
+  border: solid #b7adcf 0.2rem;
+  border-radius: 0.33rem;
+  width: 100%;
+  flex: auto;
+}
+
+#body-left,
+#body-right {
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+  padding: 1rem;
+  border: solid #dee7e7 0.175rem;
+}
+
+#body-left {
+  width: 25%;
+}
+
+#body-right {
+  width: 75%;
+}
+
+#body-right-top {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.download-button {
+  margin-left: auto;
+  align-self: center;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  font-weight: 500;
+}
+
+input,
+select {
+  font-weight: 400;
+}
+
+button {
+  font-size: medium;
+  font-weight: 900;
+}
+
+button,
+select {
+  color: #535657;
+  background-color: white;
+  border: 0.125rem solid #dee7e7;
+  border-radius: 0.25rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+header img {
+  width: 3.7rem;
+  margin-right: 1rem;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: #dee7e7;
+  height: 0.125rem;
+}
+
+h1,
+h2 {
+  color: #f4faff;
+  padding: 1rem 0;
+  width: 50%;
+  overflow: hidden;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Munro", "Roboto Mono", monospace;
+  text-align: start;
+}
+
+h2 {
+  font-family: "Munro Small", monospace;
+  font-size: x-large;
+  text-align: end;
+  display: inline-block;
+  vertical-align: center;
+  line-height: normal;
+}
+
+p {
+  flex: auto;
+  font-size: small;
+}
+
+span {
+  display: block;
+}
+
+canvas {
+  box-sizing: border-box;
+  background-color: white;
+  border: 0.125rem solid #dee7e7;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+input,
+select {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  color: #dee7e7;
+  padding: 0.5rem;
+}
+
+a {
+  color: #dee7e7;
+}
+
+@media only screen and (min-width: 600px) {
+}
